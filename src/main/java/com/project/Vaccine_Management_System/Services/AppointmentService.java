@@ -66,7 +66,7 @@ public class AppointmentService {
                 "Please reach at "+doctor.getVaccinationCenter().getAddress()+"\n"
                 + "Mask is mandatory";
 
-        mailMessage.setFrom("3zomato3@gmail.com");
+        mailMessage.setFrom("@gmail.com");//enter the mail you gave in application properties
         mailMessage.setTo(user.getEmailId());
         mailMessage.setSubject("Appointment Booked Successfully.");
         mailMessage.setText(message);
